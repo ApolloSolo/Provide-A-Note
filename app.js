@@ -18,7 +18,7 @@ app.get('/api/notes/:id', (req, res) => {
     const { id } = req.params;
     const result = findById(id, notes);
     res.send(result);
-})
+}) //
 
 app.post('/api/notes', (req, res) => {
     req.body.id = uniqid();
